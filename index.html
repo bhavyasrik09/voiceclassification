@@ -91,9 +91,8 @@
         let isListening = false;
 
         async function createModel() {
-            const checkpointURL = URL + "model.json";
-            const metadataURL = URL + "metadata.json";
-
+            const modelUrl = "https://bhavyasrik09.github.io/voiceclassification/voice/model.json";
+            const weightsUrl = "https://bhavyasrik09.github.io/voiceclassification/voice/weights.bin";
             recognizer = speechCommands.create(
                 "BROWSER_FFT", // Fourier transform type
                 undefined,    // Use default vocabulary
